@@ -16,25 +16,25 @@ This project is an automated testing framework for the OpenCart web application,
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
-- **opencart-4.0.2.3** Download from https://www.opencart.com/index.php?route=cms/download
+
 - **Java** (version 17 or higher)
 - **Maven** (version 3.9.6 or higher)
 - **Git** (version control system, git version 2.43.0.windows.1)
 - **WebDriver** (e.g., ChromeDriver)
 - **Eclipse IDE** (optional, for development)
--**opencart-4.0.2.3** Download from https://www.opencart.com/index.php?route=cms/download
+- **opencart-4.0.2.3** Download from https://www.opencart.com/index.php?route=cms/download
 ## Project Structure
 
 
 ### **Directory and File Descriptions**
 
 - **`src/main/java/`**
-  - **OpenCart.AbstractComponents** Contains the helper classes for the project.
-    - **AbstractComponents.java**:  Contains all Selenium related common actions on each page for example different kind of explicit waits and key presses etc.
-    - **ExtentReporterNG.java**: For generating Extent reporter object.
-    - **openShopDB.java**: For interaction with openShop mysql Database.
-  - **OpenCart.PageObjects**: Implements the Page Object Model (POM) pattern, where each class represents a page in the web application and provides methods to interact with elements on that page.
-  - **resources/globalData.properties**:  configuration file, such as environment-specific settings or data required for running tests.
+  - **`OpenCart.AbstractComponents`** Contains the helper classes for the project.
+    - **`AbstractComponents.java`**:  Contains all Selenium related common actions on each page for example different kind of explicit waits and key presses etc.
+    - **`ExtentReporterNG.java`**: For generating Extent reporter object.
+    - **`openShopDB.java`**: For interaction with openShop mysql Database.
+  - **`OpenCart.PageObjects`**: Implements the Page Object Model (POM) pattern, where each class represents a page in the web application and provides methods to interact with elements on that page.
+  - **`resources/globalData.properties`**:  configuration file, such as environment-specific settings or data required for running tests.
 - **`src/test/java/`**
   - **`OpenCart.stepDefinitions/`**: Contains Cucumber step definitions that map Gherkin steps in feature files to code and contains TestNG runner classes to configure and execute Cucumber tests.
   - **`Cucumber/`**: Contains Cucumber feature files written in Gherkin syntax, which describe test scenarios and expected behavior of the application.
