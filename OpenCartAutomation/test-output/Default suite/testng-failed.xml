@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cucumber.addToCartTestRunner">
+      <class name="OpenCart.stepDefinitions.addToCartTestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="3"/>
         </methods>
-      </class> <!-- Cucumber.addToCartTestRunner -->
+      </class> <!-- OpenCart.stepDefinitions.addToCartTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

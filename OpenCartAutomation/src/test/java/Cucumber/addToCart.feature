@@ -23,33 +23,33 @@ Feature: Validate Add to Cart feature
   Background: 
     Given The user is on home page
 
-  #@tag1
-  #Scenario Outline: Validate adding the product to Cart from 'Product Display' Page
-    #Given Enter any "<existing Product>" name into the Search text box field
-    #And Click on the button having search icon
-    #When Click on the "<existing Product>" in the Search results
-    #And  'Add to Cart' "<existing Product>" on the 'Product Display' page
-    #Then Success message with text - 'Success: You have added <existing Product> to your shopping cart!' should be displayed
-    #When Click on the 'Shopping Cart'
-    #Then "<existing Product>" should be successfully displayed in the Shopping Cart page
-#
-    #Examples: 
-      #| existing Product |
-      #| iMac             |
-#
-  #Scenario Outline: Validate adding the product to Cart from 'Wish List' Page
-    #Given User is logged in with "<user name>" and "<password>"
-    #And "<existing Product>" is added to wish list
-    #When Click on the 'Wish List'
-    #And  'Add to Cart' "<existing Product>" on the 'Wish list' page
-    #Then Success message with text - 'Success: You have added <existing Product> to your wish list!' should be displayed
-    #When Click on the 'Shopping Cart'
-#		Then "<existing Product>" should be successfully displayed in the Shopping Cart page
-#		
-#		Examples:
-#			| existing Product |user name     |password|
-      #| iMac             |lone@admin.com|admin   |
-      #
+  @tag1
+  Scenario Outline: Validate adding the product to Cart from 'Product Display' Page
+    Given Enter any "<existing Product>" name into the Search text box field
+    And Click on the button having search icon
+    When Click on the "<existing Product>" in the Search results
+    And  'Add to Cart' "<existing Product>" on the 'Product Display' page
+    Then Success message with text - 'Success: You have added <existing Product> to your shopping cart!' should be displayed
+    When Click on the 'Shopping Cart'
+    Then "<existing Product>" should be successfully displayed in the Shopping Cart page
+
+    Examples: 
+      | existing Product |
+      | iMac             |
+
+  Scenario Outline: Validate adding the product to Cart from 'Wish List' Page
+    Given User is logged in with "<user name>" and "<password>"
+    And "<existing Product>" is added to wish list
+    When Click on the 'Wish List'
+    And  'Add to Cart' "<existing Product>" on the 'Wish list' page
+    Then Success message with text - 'Success: You have added <existing Product> to your wish list!' should be displayed
+    When Click on the 'Shopping Cart'
+		Then "<existing Product>" should be successfully displayed in the Shopping Cart page
+		
+		Examples:
+			| existing Product |user name     |password|
+      | iMac             |lone@admin.com|admin   |
+      
    Scenario Outline: Validate adding the product to Cart from 'Search Results' Page
    Given Enter any "<existing Product>" name into the Search text box field
    And Click on the button having search icon
@@ -68,6 +68,7 @@ Feature: Validate Add to Cart feature
     And Click on the button having search icon
     When Click on the "<existing Product>" in the Search results
     And  'Add to Cart' 'Related Product' on the 'Product Display' page
+    Then Success message with text - 'Success: You have added <existing Product> to your shopping cart!' should be displayed
     And Click on the 'Shopping Cart'
     Then "<existing Product>" should be successfully displayed in the Shopping Cart page
     Examples: 
