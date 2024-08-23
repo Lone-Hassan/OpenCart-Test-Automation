@@ -16,7 +16,7 @@ This project is an automated testing framework for the OpenCart web application,
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
--**opencart-4.0.2.3** Download from https://www.opencart.com/index.php?route=cms/download
+- **opencart-4.0.2.3** Download from https://www.opencart.com/index.php?route=cms/download
 - **Java** (version 17 or higher)
 - **Maven** (version 3.9.6 or higher)
 - **Git** (version control system, git version 2.43.0.windows.1)
