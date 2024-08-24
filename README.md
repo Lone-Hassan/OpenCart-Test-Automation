@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is an automated testing framework for the OpenCart web application, using **Maven**, **Java**, **Selenium WebDriver**, **TestNG**, and **Cucumber**. The framework is designed to support behavior-driven development (BDD) and ensure the quality of the OpenCart application through automated tests.
+This project is an automated testing framework for the OpenCart web application, using **Maven**, **Java**, **Selenium WebDriver**, **TestNG**, and **Cucumber**. The hybrid framework is designed to support behavior-driven development (BDD) and  it combines multiple testing techniques and tools to create a robust and flexible testing solution to ensure the quality of the OpenCart application through automated tests.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
