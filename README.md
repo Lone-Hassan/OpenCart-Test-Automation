@@ -65,7 +65,7 @@ This layout helps in organizing the code and configuration files in a structured
 2. **Navigate to the project directory:**
 
     ```bash
-    cd OpenCart-Test-Automation
+    cd OpenCart-Test-Automation/OpenCartAutomation
     ```
 
 3. **Install dependencies:**
