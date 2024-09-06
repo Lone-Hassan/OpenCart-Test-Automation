@@ -46,7 +46,7 @@
 									<!--
 								<include>**/MySpecialTestClass.java</include> -->
 								</includes>
-								<testFailureIgnore>true</testFailureIgnore>
+								<!--<testFailureIgnore>true</testFailureIgnore>-->
 							</configuration>
 						</plugin>
 
